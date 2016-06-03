@@ -1,5 +1,5 @@
 {
-  "name": "google-batch",
+  "name": "@synccloud/google-batch",
   "version": "0.0.7",
   "description": "Sends batch requests to Google REST API",
   "repository": {

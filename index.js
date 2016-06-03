@@ -23,7 +23,7 @@ function getMultipart(calls){
 		var options = {
 			'Content-Type': 'application/http',
 			'Content-ID' : contentId,
-			'body' : 'GET ' + opts.path + (Object.keys(opts.qs).length ? '?' + querystring.stringify(opts.qs) : "") +  '\n'
+			'body' : 'GET ' + opts.url.href + '\n' //  + (Object.keys(opts.qs).length ? '?' + querystring.stringify(opts.qs) : "") + '\n'
 		};
 		if(opts.method !== "GET"){
 			options.body +=  'Content-Type: application/json'  + '\n\n' +
